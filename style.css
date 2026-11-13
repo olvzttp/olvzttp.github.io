@@ -1008,3 +1008,22 @@ button, input { font: inherit; }
 .desktop-home .search-button { position: relative; flex-shrink: 0; }
 .desktop-home .search-button img { position: static; display: block; width: 20px; height: 20px; }
 .desktop-home .cart-button { flex-shrink: 0; }
+/* Correções de publicação e dimensionamento */
+.desktop-home > main { display: block; width: 100%; min-width: 0; flex: 0 0 auto; }
+.desktop-home > main > section { width: 100%; }
+.desktop-home > .footer { width: 100%; }
+.desktop-home .navbar { flex-wrap: nowrap; }
+.desktop-home .brand-link { flex-shrink: 0; }
+@media (max-width: 850px) {
+  .desktop-home .navbar { padding-left: 20px; padding-right: 20px; gap: 12px; }
+  .desktop-home .nav-actions { display: flex; gap: 12px; margin-left: auto; order: 2; }
+  .desktop-home .search-button { display: inline-flex; }
+  .desktop-home .menu-toggle { display: flex; order: 3; flex: 0 0 40px; }
+  .desktop-home .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 18px 22px; background: #faf7f2; z-index: 30; flex-direction: column; align-items: stretch; gap: 18px; border-bottom: 1px solid #eadfd5; }
+  .desktop-home .nav-links.is-open { display: flex; }
+}
+@media (max-width: 420px) {
+  .desktop-home .brand-name { font-size: 20px; }
+  .desktop-home .navbar { padding-left: 12px; padding-right: 12px; gap: 6px; }
+  .desktop-home .nav-actions { gap: 4px; }
+}
