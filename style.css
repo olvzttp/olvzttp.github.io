@@ -977,7 +977,7 @@ button, input { font: inherit; }
     margin-left: auto;
   }
 }
-/* Navbar: evita sobreposição em tablets e janelas menores. */
+
 @media (min-width: 701px) and (max-width: 850px) {
   .desktop-home .navbar { height: 72px; padding: 0 22px; gap: 12px; }
   .desktop-home .brand-name { font-size: 24px; }
@@ -1002,8 +1002,6 @@ button, input { font: inherit; }
   .desktop-home .nav-link { align-items: flex-start; width: 100%; }
   .desktop-home .active-bar { width: 24px; }
 }
-
-/* Ícones alinhados e espaçados, sem mudar o layout geral. */
 .desktop-home .nav-actions { flex-shrink: 0; }
 .desktop-home .search-button { position: relative; flex-shrink: 0; }
 .desktop-home .search-button img { position: static; display: block; width: 20px; height: 20px; }
