@@ -1,26 +1,46 @@
-* {
-    margin: 0%;
-    padding: 0%;
-    border: 0cap;
+.desktop-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 1024px;
+  align-items: flex-start;
+  position: relative;
+  background-color: #faf7f2;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333333;
+.desktop-home .navbar {
+  display: flex;
+  height: 88px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #faf7f2;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #eadfd5;
 }
 
-.navbar {
-    background-color: #ffffff;
+.desktop-home .div {
+  display: inline-flex;
+  gap: 12px;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
 }
 
-.navbar-brand {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333333;
-    align-items:flex-start;
-    padding: 10px 15px;
+.desktop-home .div-wrapper {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  background-color: #47573d;
+  border-radius: 18px;
+  align-items: center;
+  position: relative;
 }
+
 .desktop-home .leaf {
   position: relative;
   width: 18px;
@@ -808,6 +828,9 @@ body {
   letter-spacing: 0;
   line-height: normal;
 }
+
+
+/* Ajustes gerais e responsividade */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body { margin: 0; overflow-x: hidden; }
@@ -909,6 +932,8 @@ button, input { font: inherit; }
   .desktop-home .add-btn { padding: 8px 12px; }
 }
 
+
+/* Ajustes solicitados: espaçamento das ações da navbar e estrelas dos produtos */
 .desktop-home .nav-actions {
   display: inline-flex;
   align-items: center;
