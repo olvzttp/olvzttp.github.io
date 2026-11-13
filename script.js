@@ -58,7 +58,7 @@ if (newsletterForm) {
     event.preventDefault();
     const email = document.querySelector("#newsletter-email").value.trim();
     if (email) {
-      alert("Obrigada por se inscrever! (Demonstração: conecte o formulário a um serviço para salvar os e-mails.)");
+      alert("Obrigada por se inscrever!");
       newsletterForm.reset();
     }
   });
